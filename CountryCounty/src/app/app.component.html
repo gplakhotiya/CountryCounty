@@ -1,0 +1,51 @@
+<div class="nav">
+  <h3>Govind Prasad Lakhotia</h3>
+  <a href="https://github.com/gplakhotiya/CountryCounty">github</a>
+</div>
+
+<div class="search">
+  <input type="text" [(ngModel)]="Data" (keyup)="sendData()" placeholder="Search">
+  <!-- <p>{{Data}}</p> -->
+</div>
+
+<br>
+<br>
+<br>
+
+<div [hidden]="Data==''">
+  <table>
+    <tr>
+      <th>
+        CountryName
+      </th>
+      <th>
+        CapitalName
+      </th>
+      <th>
+        ContinentName
+      </th>
+    </tr>
+    <hr>
+
+    <tr *ngFor="let data of mainData; let i=index">
+      <td>
+        {{data[0]}}
+      </td>
+      <td>
+        {{data[1]}}
+      </td>
+      <td>
+        {{data[2]}}
+      </td>
+    </tr>
+
+  </table>
+
+</div>
+
+<div>
+  <footer>
+    <hr>
+    <p>Thank you</p>
+  </footer>
+</div>

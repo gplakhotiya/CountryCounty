@@ -1,0 +1,76 @@
+.nav {
+  position: sticky;
+  background-color: rgb(64, 64, 212);
+  color: white;
+  display: flex;
+}
+
+.nav h3:hover {
+  color: red;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bold;
+
+}
+
+.nav a:hover {
+  text-transform: capitalize;
+  color: pink;
+}
+
+.search {
+  position: sticky;
+  display: flexbox;
+  margin-top: 20px;
+  margin-left: 40%;
+  border: 1px black;
+}
+
+.search :hover {
+  cursor: pointer;
+  background-color: yellow;
+
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 30%;
+}
+
+thead th:nth-child(3) {
+  width: 30%;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: aquamarine;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin-left: 10px;
+}
